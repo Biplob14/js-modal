@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+header{
+    text-align: center;
+    padding: 40px;
+    font-size: 2rem;
+    color: chartreuse;
+
+}
+
+.subscribe-section {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.subscribe-section h2{
+    letter-spacing: 3px;
+    padding: 10px;
+}
+.subscribe-section p{
+    max-width: 80%;
+    text-align: center;
+    align-content: center;
+}
+.subscribe-section button, .modal button{
+    border-radius: 5px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    background-color: purple;
+    color: #fff;
+    text-align: center;
+    display: inline block;
+    padding: 15px 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.modal-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+.bg-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal{
+    position: relative;
+    background-color: #fff;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
